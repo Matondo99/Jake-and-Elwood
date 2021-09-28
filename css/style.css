@@ -91,11 +91,16 @@ Navigation
     text-decoration: none;
     font-weight: 700;
     font-size: 3rem;
+    padding-bottom: 5px;
 }
 
 .navi-link:focus,
 .navi-link:hover {
     color: #FFE600;
+}
+
+.current-page {
+    border-bottom: solid 3px #FFE600;
 }
 
 .close-btn {
@@ -121,6 +126,26 @@ Navigation
     padding: .5em;
 }
 
+@media all and (min-width: 600px){
+    .close-btn,
+    .open-btn {
+        display: none;
+    }
+    .navi {
+        position: initial;
+    }
+    .navi-menu{
+        flex-direction: row;
+        justify-content: start;
+    }
+    .navi-item {
+        margin-left: 2em;
+    }
+    .navi-link {
+        font-size: inherit;
+    }
+}
+
 
 /* =============================================
 ================================================
@@ -129,7 +154,7 @@ General Layout
 
 .main-grid {
     display: grid;
-    grid-template-columns: minmax(1em,1fr) minmax(100px,560px) minmax(1em,1fr);
+    grid-template-columns: minmax(1em,1fr) minmax(320px,900px) minmax(1em,1fr);
     column-gap: 1em;
 }
 
