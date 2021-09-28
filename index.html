@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake & Elwood</title>
     <link href="#" rel="icon">
-    <link href="#" rel="stylesheet"> <!-- Font Families -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">  <!-- Font Families -->
     <link href="#" rel="stylesheet"> <!-- Social Icons -->
-    <link href="css/#" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-    <header class="">
+    <header class="header main-grid">
         <div class="navi-bar">
-            <img class="navi-logo" src="img/logo.png" alt="">
+            <a class="logo-link" href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
             <nav class="navi">
+                <button aria-label="close navigation" class="close-btn">&#215;</button>
                 <ul class="navi-menu">
                     <li class="navi-item"><a class="navi-link" href="index.html">home</a></li>
                     <li class="navi-item"><a class="navi-link" href="#">about us</a></li>
                     <li class="navi-item"><a class="navi-link" href="#">contact</a></li>
                 </ul>
             </nav>
+            <button aria-label="open navigation" class="open-btn">&#9776;</button>
         </div> <!-- / navi-bar -->
     </header>
 
@@ -50,7 +52,7 @@
 
     <footer class="">
         <div class="footer-main">
-            <img class="footer-logo" src="img/logo.png" alt="">
+            <img class="logo" src="img/logo.png" alt="">
             <p class="footer-text">Two brothers from Chicago that are just trying to pay back their debt by helping others with their SEO, SEM, and Content Marketing needs.</p>
             <p class="footer-fineprint">© Jake&Elwood 2019</p>
         </div>
@@ -61,5 +63,6 @@
         </ul>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
