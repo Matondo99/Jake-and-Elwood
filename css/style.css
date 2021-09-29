@@ -16,18 +16,90 @@ body {
 }
 
 h1, h2 {
-    color: #000;
     line-height: 1.4;
+}
+
+
+h2 {
+    color: #000;
 }
 
 img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 
 strong {
     font-weight: 700;
+}
+
+
+/* =============================================
+================================================
+Typography
+================================================ */
+
+/* ============= Hero ======================= */
+
+.hero-title {
+    font-size: 1.5rem;
+}
+
+.hero-title span {
+    color: #FFE600;
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    margin: 0 0 2.25em;
+    /* border: solid 3px magenta; */
+}
+
+.btn {
+    font-size: .875rem;
+    background-color: #FFE600;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.btn-prime {
+    letter-spacing: 1px;
+    justify-self: start;
+    padding: 1em 2em;
+}
+
+/* ============= Info ======================= */
+
+.info-subtitles {
+    font-size: 1.125rem;
+}
+
+.info-subtitles::after {
+    content: "";
+    display: block;
+    background-color: #FFE600;
+    width: 100%;
+    height: 3px;
+}
+
+/* ============= Footer ======================= */
+
+.footer-fineprint {
+    font-size: .875rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+.social-link {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .5);
+    padding: .35em;
+}
+
+.social-link:focus,
+.social-link:hover {
+    color: rgba(0, 0, 0, 1);
 }
 
 /* =============================================
@@ -47,12 +119,12 @@ Navigation
     display: flex;
 }
 
-.navi-bar .logo {
-    padding-top: 3em;
-}
-
 .logo-link {
     background-color: #FFE600;
+}
+
+.navi-bar .logo {
+    padding-top: 3em;
 }
 
 .navi {
@@ -154,12 +226,94 @@ General Layout
 
 .main-grid {
     display: grid;
-    grid-template-columns: minmax(1em,1fr) minmax(320px,900px) minmax(1em,1fr);
+    grid-template-columns: minmax(1em,1fr) repeat(3, minmax(auto,300px)) minmax(1em,1fr);
     column-gap: 1em;
+}
+
+/* ============= Hero ======================= */
+
+.hero {
+    background-color: #000;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 6em 0 5em;
+}
+
+.hero>* {
+    grid-column: 2 / 4;
+    margin-right: 10%;
+}
+
+/* ============= Info ======================= */
+
+.info {
+    padding: 4em 0 4em;
+}
+
+.info>* {
+    grid-column: 2 / -2;
+}
+
+.info-arti {
+    text-align: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+/* ============= Footer ======================= */
+
+.footer {
+    grid-template-areas: 
+    ". soci soci soci ."
+    ". ftex ftex ftex .";
+    background-color: #EBEBEB;
+    padding: 4em 0 4em;
+}
+
+.footer>* {
+    grid-column: 2 / -2;
+}
+
+.footer .logo {
+    /* grid-area: logo; */
+    /* justify-self: start; */
+    /* min-width: 0; */
+    /* max-width: 100%; */
+    margin: 0 auto;
+}
+
+.footer-main {
+    text-align: center;
+    grid-area: ftex;
+    opacity: .5;
+}
+
+.footer-text {
+    margin-bottom: 4em;
+}
+
+.footer-social {
+    grid-area: soci;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.social-item {
+    margin: 0 .75em;
+}
+
+.social-link {
+    text-decoration: none;
 }
 
 /* =============================================
 ================================================
-Navigation
+
 ================================================ */
 
