@@ -244,7 +244,7 @@ General Layout
 .hero {
     background-color: #000;
     background-image: url(../img/hero-bg.jpg);
-    background-position: center;
+    background-position: 57%;
     background-size: cover;
     background-repeat: no-repeat;
     color: #FFF;
@@ -259,7 +259,8 @@ General Layout
 @media all and (min-width: 600px){
     .hero {
         padding: 10em 0 8em;
-    }
+        background-position: center;
+}
 }
 
 /* ============= Info ======================= */
