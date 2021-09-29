@@ -34,6 +34,10 @@ strong {
     font-weight: 700;
 }
 
+.framed-img {
+    box-shadow: 7px 6px #000, 14px 12px #FFE600;
+    margin: 2em auto 3em auto;
+}
 
 /* =============================================
 ================================================
@@ -80,9 +84,15 @@ Typography
     content: "";
     display: block;
     background-color: #FFE600;
-    width: 100%;
-    height: 3px;
+    width: 20%;
+    height: 4px;
+    margin-top: .5em;
 }
+
+.home-main .info-subtitles::after {
+    margin: .35em auto 0;
+}
+    
 
 /* ============= Footer ======================= */
 
@@ -100,6 +110,46 @@ Typography
 .social-link:focus,
 .social-link:hover {
     color: rgba(0, 0, 0, 1);
+}
+
+/* ============= About ======================= */
+
+.top-title {
+    font-size: 3rem;
+    margin-bottom: .25em;
+}
+
+.top-title::after {
+    content: "";
+    display: block;
+    background-color: #FFE600;
+    height: .55em;
+    position: relative;
+    z-index: -10;
+    bottom: .7em;
+    left: .25em;
+}
+
+.top-subtitle {
+    font-size: 1.125rem;
+    font-weight: 700;
+    /* margin: 0 20% 1.125rem;  
+    Save for @media */
+    margin: 0;
+}
+
+@media all and (min-width: 600px){
+    .top-subtitle {
+        margin: 0 20%;
+    }
+    .top-subtitle::after {
+        content: "";
+        display: block;
+        background-color: #000;
+        height: 2px;
+        width: 80px;
+        margin: .75em auto 0;
+    }
 }
 
 /* =============================================
@@ -260,7 +310,7 @@ General Layout
     .hero {
         padding: 10em 0 8em;
         background-position: center;
-}
+    }
 }
 
 /* ============= Info ======================= */
@@ -356,6 +406,33 @@ General Layout
     }
     .social-item {
         margin: 0 0 0 1.5em;
+    }
+}
+
+/* ============= About ======================= */
+
+.main-top {
+    text-align: center;
+    justify-items: center;
+}
+
+.main-top>* {
+    grid-column: 2 / -2;
+}
+
+.about-main .info-arti {
+    text-align: left;
+}
+
+@media all and (min-width: 600px){
+    .about-main .info-arti {
+        grid-column: 3 / span 2;
+        margin-left: 2em;
+    }
+    .framed-img {
+        grid-area: 1/2/3/3;
+        min-height: 120px;
+        object-position: left;
     }
 }
 
