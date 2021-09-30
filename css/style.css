@@ -69,6 +69,7 @@ Typography
     letter-spacing: 1px;
     padding: 1em 2em;
     transition: background-color 300ms, box-shadow 900ms;
+    white-space: nowrap;
 }
 
 .btn:focus,
@@ -248,8 +249,8 @@ Navigation
 
 .close-btn {
     position: absolute;
-    left: 8.6em;
-    top: -.2em;
+    right: 2rem;
+    top: -.5rem;
     padding: .5em;
     font-size: 3rem;
     font-weight: 700;
@@ -262,7 +263,7 @@ Navigation
 .open-btn {
     font-size: 2rem;
     border: 0;
-    background: none;
+    background-color: inherit;
     color: #FFF;
     cursor: pointer;
     align-self: center;
@@ -302,7 +303,7 @@ General Layout
 
 .main-grid {
     display: grid;
-    grid-template-columns: minmax(1em,1fr) repeat(3, minmax(auto,300px)) minmax(1em,1fr);
+    grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(auto, 300px)) minmax(1em, 1fr);
     column-gap: 2em;
 }
 
@@ -311,7 +312,7 @@ General Layout
 .hero {
     background-color: #000;
     background-image: url(../img/hero-bg.jpg);
-    background-position: 57%;
+    background-position: 60%;
     background-size: cover;
     background-repeat: no-repeat;
     color: #FFF;
@@ -320,7 +321,7 @@ General Layout
 
 .hero>* {
     grid-column: 2 / 4;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 
 @media all and (min-width: 600px){
