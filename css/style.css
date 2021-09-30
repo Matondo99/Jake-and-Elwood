@@ -222,7 +222,11 @@ Navigation
     /* border: solid 3px greenyellow; */
     align-items: center;
     height: 100%;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.navi-item {
+    margin: 1em 0;
 }
 
 .navi-link {
@@ -244,6 +248,8 @@ Navigation
 
 .close-btn {
     position: absolute;
+    left: 8.6em;
+    top: -.2em;
     padding: .5em;
     font-size: 3rem;
     font-weight: 700;
@@ -281,7 +287,7 @@ Navigation
         justify-content: start;
     }
     .navi-item {
-        margin-left: 2em;
+        margin: 0 0 0 2em;
     }
     .navi-link {
         font-size: inherit;
