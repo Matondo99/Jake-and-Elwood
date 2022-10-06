@@ -6,7 +6,9 @@ This a solution to the to [The Responsive Web Design Bootcamp](https://scrimba.c
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshot](#Screenshot)
+    - [Desktop Screenshot](#Desktop-view)
+    - [Mobile Screenshot](#Mobile-view)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -24,7 +26,10 @@ Users should be able to:
 
 ### Screenshot
 
+#### Desktop view
 ![Desktop-Screenshot](design/desktop_view.png)
+
+#### Mobile view
 ![Mobile-Screenshot](design/mobile_view.png)
 
 ### Links
